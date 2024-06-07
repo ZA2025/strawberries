@@ -11,11 +11,14 @@
         flex-direction: column;
         width: 100%;
         max-width: 90%;
-        padding: 80px 0;
+        padding: 10px 0;
         height: auto;
         text-align: center;
         margin: 0 auto;
         z-index: 2;
+        @media screen and (min-width: 768px) {
+            padding: 40px 0;
+        }
         @media screen and (min-width: 1024px) {
             max-width: 60%;
             padding: 180px 0;
@@ -27,7 +30,7 @@
     }
     &Title {
         color: $green;
-        font-size: 20px;
+        font-size: 30px !important;
         position: relative;
         margin: 0 auto;
         text-align: center;
@@ -47,14 +50,14 @@
     }
     &Text {
         color: $darkText;
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
         margin-bottom: 50px;
-        font-weight: 700;
         max-width: 60%;
         margin: 40px auto;
         @media screen and (min-width: 1024px) {
             max-width: 700px;
+            font-weight: 700;
         }
     }
     .strawberry-1 {

@@ -48,11 +48,15 @@
         }
         .strawberry-1 {
             position: absolute;
-            top: 0;
+            top: -150px;
             right: 0;
             width: 100%;
             max-width: 100px;
-            rotate: 120deg;
+            rotate: 20deg;
+            padding: 40px 0;
+            @media screen and (min-width: 768px) {
+                top: 0;
+            }
              
         }
         &.fourth {

@@ -860,11 +860,16 @@ ul li {
   flex-direction: column;
   width: 100%;
   max-width: 90%;
-  padding: 80px 0;
+  padding: 10px 0;
   height: auto;
   text-align: center;
   margin: 0 auto;
   z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .bannerContent {
+    padding: 40px 0;
+  }
 }
 @media screen and (min-width: 1024px) {
   .bannerContent {
@@ -879,7 +884,7 @@ ul li {
 }
 .bannerTitle {
   color: #263415;
-  font-size: 20px;
+  font-size: 30px !important;
   position: relative;
   margin: 0 auto;
   text-align: center;
@@ -904,16 +909,16 @@ ul li {
 }
 .bannerText {
   color: #0e3a25;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   margin-bottom: 50px;
-  font-weight: 700;
   max-width: 60%;
   margin: 40px auto;
 }
 @media screen and (min-width: 1024px) {
   .bannerText {
     max-width: 700px;
+    font-weight: 700;
   }
 }
 .banner .strawberry-1 {
@@ -1365,11 +1370,17 @@ ul li {
 }
 .aboutCol .strawberry-1 {
   position: absolute;
-  top: 0;
+  top: -150px;
   right: 0;
   width: 100%;
   max-width: 100px;
-  rotate: 120deg;
+  rotate: 20deg;
+  padding: 40px 0;
+}
+@media screen and (min-width: 768px) {
+  .aboutCol .strawberry-1 {
+    top: 0;
+  }
 }
 .aboutCol.fourth .strawberry-1 {
   rotate: 20deg;
