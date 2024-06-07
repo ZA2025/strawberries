@@ -16,5 +16,4 @@ function initializeNav() {
         });
     }
 }
-
-initializeNav();
+window.onload = initializeNav;
