@@ -1379,13 +1379,17 @@ ul li {
   padding: 5px 0;
 }
 .faqsTitle {
-  font-size: 2rem;
   margin-bottom: 20px;
   font-weight: 800;
   letter-spacing: 0;
   line-height: 0.9;
   max-width: 50%;
-  font-size: 56px;
+  font-size: 36px;
+}
+@media screen and (min-width: 1280px) {
+  .faqsTitle {
+    font-size: 56px;
+  }
 }
 .faqs .accordion {
   background-color: #0e3a25;
