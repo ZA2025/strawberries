@@ -1,0 +1,28 @@
+.primaryButton {
+    background-color: $brightPnk;
+    padding: 10px 40px;
+    color: white;
+    border: 2px solid $brightPnk;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: "Archivo Black", sans-serif;
+    &:hover {
+        background-color: white;
+        color: $brightPnk;
+    }
+}
+.secondaryButton {
+    background-color: $neutral;
+    padding: 10px 40px;
+    color: $brightPnk;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 2px solid $brightPnk;
+    font-family: "Archivo Black", sans-serif;
+    &:hover {
+        background-color: white;
+        color: $brightPnk;
+    }
+}

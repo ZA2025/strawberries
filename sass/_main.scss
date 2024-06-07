@@ -1,0 +1,182 @@
+.main {
+    position: relative;
+    width: 100%;
+    background-color: #9bd293;
+    color: white;
+   
+    &Img {
+        width: 100%;
+        max-width: 400px;
+    }
+    .inner {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        height: 100%;
+        
+    }
+    &ContentRow {
+        width: 100%;
+        color: #000;
+        flex-wrap: nowrap;
+        padding: 0 0 50px 0; 
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            padding: 180px 0;
+        } 
+    }
+    .primaryButton {
+        max-width: fit-content;
+        margin: 0 auto;
+        @media screen and (min-width: 1024px) {
+            margin: unset;
+            text-align: left;
+
+        }
+    }
+     
+    .col {
+        width: 100%;
+        flex-basis: 100%;
+        @media screen and (min-width: 1024px) {
+            flex-basis: 50%;
+        } 
+         
+        &.jar {
+            text-align: center;
+            padding: 60px 0 50px;
+            @media screen and (min-width: 1024px) {
+                padding: 0;
+                 
+            }
+            .decorContainer {
+                position: relative;
+                max-width: fit-content;
+                margin: 0 auto;
+                z-index: 1;
+                .jarDecor {
+                    position: relative; // Add this line
+                    display: block;
+                    max-width: 200px;
+                    transform-origin: 0% 100%;
+                    transform: translate(0px, 0px) rotate(0deg);
+                    transition: transform 0.3s ease;
+                    z-index: 3; // Increase this value
+
+                }
+            
+                .decor1 {
+                    position: absolute;
+                    top: -40px;
+                    width: 250px;
+                    rotate: 130deg;
+                    right: -90px;
+                    
+                    .babyLeafDecor {
+                        transform-origin: 0% 100%;
+                        transform: translate(0px, 0px) rotate(0deg);
+                        transition: transform 0.3s ease;
+                        z-index: 2;
+                        display: none;
+                        transition: transform 2s;
+                        @media screen and (min-width: 500px) {
+                            display: block;
+
+                        }
+                    }
+                }
+            
+                .decor2 {
+                    position: absolute;
+                    top: -40px;
+                    left: -80px;
+                    width: 250px;
+                    
+                    .kaleLeafDecor {
+                        transform-origin: 0% 100%;
+                        transform: translate(0px, 0px) rotate(0deg);
+                        transition: transform 0.3s ease;
+                        width: 250px;
+                        max-width: 250px;
+                        z-index: 2;
+                        display: none;
+                        transition: transform 2s;
+                        @media screen and (min-width: 500px) {
+                            display: block;
+
+                        }
+                    }
+                }
+            }
+            &:hover {
+                 
+                .decor2 {
+                     .kaleLeafDecor{
+                        transform: rotate(-20deg);
+                    }
+                }
+                .decor1 {
+                    .babyLeafDecor  {
+                        transform: rotate(-20deg);
+                        
+                    }
+                }
+                 
+                 
+            }
+             
+        }
+         
+        &.fruits {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            max-width: 80%;
+            margin: 0 auto;
+            @media screen and (min-width: 1024px) {
+                 max-width: unset;
+                 margin: unset;
+                 text-align: left;
+            } 
+            .fruit2 {
+                position: absolute;
+                top: -30px;
+                max-width: 56px;
+            }
+            .fruit1 {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                max-width: 56px;
+                rotate: 180deg;
+            }
+        }  
+    }
+     
+    &Title {
+        color: #fd023f;
+        font-size: 20px;
+        position: relative;
+        margin: 0;
+        font-size: 30px;
+        margin-top: 30px;
+        @media screen and (min-width: 1024px) {
+            font-size: 60px;
+            margin-top: unset;
+        }
+         
+    }
+    &Text {
+        align-self: center;
+        width: 50%;
+        color: $darkText;
+        width: 100%;
+         
+        font-size: 20px;
+    }
+    &Image {
+        align-self: center;
+        width: 50%;
+    }
+}

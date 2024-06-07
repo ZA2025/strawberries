@@ -1,0 +1,169 @@
+.footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff9e1;
+    box-sizing: border-box;
+    color: $darkText;
+    display: block;
+    overflow: hidden;
+    @media screen and (min-width: 768px) {
+        padding: 100px 0 0 0;
+    }
+    &Title {
+        font-size: 36px;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0;
+        padding-bottom: 20px;
+        @media screen and (min-width: 768px) {
+            margin: 0;
+        }
+        @media screen and (min-width: 1024px) {
+            max-width: 50%;
+            margin: unset;
+            margin-bottom: 20px;
+        }
+    }
+    &Wrap {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 90%;
+        margin: 0 auto;
+        @media screen and (min-width: 768px) {
+            flex-wrap: nowrap;
+             
+        }
+        @media screen and (min-width: 1280px) {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+    }
+    &Col {
+        position: relative;
+        width: 100%;
+        flex-basis: 100%;
+        @media screen and (min-width: 768px) {
+            width: 50%;
+            flex-basis: 50%;
+        }
+        &.info {
+            padding: 30px 0;
+            @media screen and (min-width: 768px) {
+                padding: unset;
+            }
+        }
+        &.links {
+            max-width: 90%;
+            margin: 0 auto;
+            height: 300px;
+            display: flex;
+            flex-wrap: nowrap;
+            @media screen and (min-width: 768px) {
+                max-width: unset;
+                margin: unset;
+            }
+        }
+    }
+    .subCol {
+        width: 50%;
+        flex-basis: 50%;
+         
+    }
+    .list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            padding: 10px 0;
+        }
+        a {
+            color: #263415;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 20px;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &Row {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+
+        }
+        .str{
+            width: 100%;
+            max-width: 140px;
+            display: block;
+        }
+        .chr-leave {
+            width: 100%;
+            max-width: 180px;
+            display: block;
+        }
+        .flower {
+            width: 100%;
+            max-width: 200px;
+            display: block;
+        }
+        .red-leaf {
+            max-width: 200px;
+        }
+        .onion {
+            max-width: 200px;
+        }
+         
+    }
+     
+}
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+       margin: unset; 
+    }
+    @media screen and (min-width: 1024px)  {
+        max-width: 50%;
+        margin: unset;
+    }
+}
+
+.subscribe-form input[type="email"] {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.subscribe-form {
+    button {
+        padding: 15px;
+        border: 1px solid #f1f9dc;
+        border-radius: 4px;
+        background-color: #263415;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: "Archivo Black", sans-serif;
+
+        &:hover {
+            background-color: #f1f9dc;
+            color: #263415;
+            border: 1px solid #263415;
+        }
+    }
+     
+}

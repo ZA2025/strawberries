@@ -1,0 +1,21 @@
+// Slick
+.wrapper{
+    width:100%;
+    text-align:center;
+}
+ 
+.carousel{
+    width: 100%;
+    margin: 0 auto;
+}
+.slick-slide{
+    margin: 10px;
+}
+.slick-slide img{
+    width: 100%;
+     
+}
+.wrapper .slick-dots li button:before {
+    font-size: 20px;
+    color: white;
+}

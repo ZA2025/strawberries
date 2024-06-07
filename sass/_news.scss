@@ -1,0 +1,14 @@
+.news {
+    position: relative;
+    width: 100%;
+    background-color: #158546;
+    color: white;
+    box-sizing: border-box;
+    padding: 20px 0 40px;
+    &Content {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

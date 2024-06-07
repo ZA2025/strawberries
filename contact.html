@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/javaScript/header.js"></script>
+     
+    <script src="/javaScript/headerSection.js"></script>
+    <script src="/javaScript/footerSection.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body class="strawberryFarmContact">
+    <header class="pageHeader" id="header"> 
+        <div class="pageHeaderWrap">
+            <div class="pageHeaderLogo">
+                <a href="#" class="pageHeaderLogoLink">
+                    <img src="images/strawberry-2.svg" alt="Strawberries" class="strawberry-1">
+                </a>
+            </div>
+            <nav class="pageHeaderNav">
+                <div class="burger">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times" style="display: none;"></i>
+                </div>
+                <ul class="pageHeaderList">
+                    <li class="pageHeaderItem itemDecor">
+                        <a href="/" class="pageHeaderLink">Home</a>
+                        <span class="itemDecor1">
+                            <img src="images/strawberry-2.svg" alt="Strawberries" class="strawberry-1">
+                        </span>
+                    </li>
+                    <li class="pageHeaderItem itemDecor">
+                        <a href="/about.html" class="pageHeaderLink">About</a>
+                        <span class="itemDecor2">
+                            <img src="images/onion.svg" alt="Strawberries" class="strawberry-1">
+                        </span>
+                    </li>
+                    <li class="pageHeaderItem itemDecor">
+                        <a href="/faq.html" class="pageHeaderLink">FAQs</a>
+                        <span class="itemDecor4">
+                            <img src="images/leaf.svg" alt="Strawberries" class="strawberry-1">
+                        </span>
+                    </li>
+                    <li class="pageHeaderItem itemDecor">
+                        <a href="/contact.html" class="pageHeaderLink">Contact</a>
+                        <span class="itemDecor3">
+                            <img src="images/blueberry.png" alt="Strawberries" class="strawberry-1">
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contact">
+        <div class="contactCol">
+            <div class="contactForm">
+                <h1 class="contactTitle bounce-in-top">Contact Us</h1>
+                <p class="contactText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                <form action="" method="post" class="contactForm">
+                    <div class="contactFormWrap">
+                        <div class="contactFormInput">
+                            <label for="name" class="contactFormLabel">Name</label>
+                            <input type="text" name="name" id="name" class="contactFormInputField">
+                        </div>
+                        <div class="contactFormInput">
+                            <label for="email" class="contactFormLabel">Email</label>
+                            <input type="email" name="email" id="email" class="contactFormInputField">
+                        </div>
+                        <div class="contactFormInput">
+                            <label for="message" class="contactFormLabel">Message</label>
+                            <textarea name="message" id="message" class="contactFormInputField"></textarea>
+                        </div>
+                        <div class="contactFormInput">
+                            <button type="submit" class="contactFormButton">Submit</button>
+                        </div>
+                    </div>
+                </form>
+                 
+                <ul class="socialList">
+                    <li class="socialListItem">
+                        <a href="" class="socialListItemLink">
+                            <img src="/images/icons8-instagram.svg" alt="Instagram" />
+                        </a>
+                    </li>
+                    <li class="socialListItem">
+                        <a href="" class="socialListItemLink" title="Facebook Logo">
+                            <img src="/images/icons8-facebook.svg" alt="Facebook" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contactCol">
+            <div id="map-container">    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9858.93017865483!2d-0.4378718!3d51.8475801!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487646291f47b0a9%3A0x4e272def22eca4c7!2sGrove%20Farm!5e0!3m2!1sen!2suk!4v1717703041219!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footerWrap">  
+            <div class="footerCol info">
+                <h3 class="footerTitle">Get the latest and tastiest</h3>
+                <form class="subscribe-form" action="/subscribe" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footerCol links">
+                <div class="subCol">
+                    <h3>JOIN US</h3>
+                    <ul class="list">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/faq.html">FAQs</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="subCol">
+                    <h3>CONTACT US</h3>
+                    <div class="address-container">
+                        <p>123 Fake Street</p>
+                        <p>Faketown, London</p>
+                        <p>W1A 1AA</p>
+                        <p>United Kingdom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerRow">
+            <img src="/images/strawberry-2.svg" alt="Strawberries" class="str">
+            <img src="/images/chrysanthemum.svg" alt="Strawberries" class="chr-leave">
+            <img src="/images/flower.svg" alt="Strawberries" class="flower">
+            <img src="/images/red-leaf.svg" alt="Strawberries" class="red-leaf" id="redLeaf">
+            <img src="/images/onion.svg" alt="Strawberries" class="onion">
+        </div>    
+    </section>
+    <script type="text/javascript" src="./javaScript/footer.js"></script>
+</body>
+</html>

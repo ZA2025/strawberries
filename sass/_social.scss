@@ -1,0 +1,23 @@
+.social {
+    position: relative;
+    background-color: #da3b65;
+    padding: 20px 0;
+    &Wrap {
+        position: relative; 
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+     
+}

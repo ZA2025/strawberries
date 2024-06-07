@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    //font-family: "Dosis", sans-serif;
+    //font-family: "Archivo Black", sans-serif;
+    font-weight: 400; //200 - 800
+    font-style: normal;
+     
+    &.nav-active {
+        overflow: hidden; 
+    }
+}
+h1 {
+    font-size: 2em;
+    margin: 0;
+    font-family: "Archivo Black", sans-serif;
+}
+h2, h3 {
+    font-family: "Archivo Black", sans-serif;
+}
+p {
+    font-family: "Dosis", sans-serif;
+}
+ul {
+    li {
+        font-family: "Dosis", sans-serif;
+    }
+}
+.inner {
+    width: 100%;
+    max-width: 1200px;
+    //border: 1px dashed #717171;
+    margin: 0 auto;
+    
+}

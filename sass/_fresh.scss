@@ -1,0 +1,117 @@
+.fresh {
+    position: relative;
+    width: 100%;
+    background-color: $darkpink;
+    color: white;
+    
+    &Content {
+        width: 100%;
+        padding: 80px 0;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 90%;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        @media screen and (min-width: 1024px) {
+            max-width: unset; 
+            flex-wrap: nowrap;
+            padding: 180px 0;
+        }
+    }
+    .col {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-basis: 100%;
+        max-width: 600px;
+        margin: 0 auto; 
+        @media screen and (min-width: 1024px) {
+            flex-basis: 50%;
+            max-width: unset;
+            margin: unset;
+        }
+        &.text {
+            order: 2;
+            @media screen and (min-width: 1024px) {
+                order: unset;
+            }
+             
+        }
+        .decorContainer { 
+            position: relative;
+            margin: 0 auto;
+            
+            .strawberryPng {
+                max-width: fit-content;
+                position: relative;  
+                z-index: 2;  
+            }
+            .decor1 {
+                position: absolute;
+                top: 0;
+                left: -40px;
+                z-index: 1;
+                
+                img {
+                    max-width: 200px;
+                }
+            }
+            .decor2 {
+                position: absolute;
+                top: 90px;
+                right: -50px;
+                z-index: 1;
+                rotate: 180deg;
+                
+                img {
+                    max-width: 200px;
+                }
+            }
+        }
+        &.image {
+            z-index: 4; 
+            order: 1;
+            @media screen and (min-width: 1024px) {
+                order: unset;
+            }
+        }
+        img {
+            width: 100%;
+            max-width: 250px;
+            margin: 0 auto;
+        }
+        
+        .primaryButton {
+            background-color: #158546;
+            border: 1px solid $buttonGreen;
+            max-width: fit-content;
+            margin: 20px auto;
+            &:hover {
+                background-color: white;
+                color: $brightPnk;
+                border: 1px solid $brightPnk;
+            }
+        }
+    }
+    &Title {
+        color: white;
+        font-size: 20px;
+        position: relative;
+        margin: 0;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 10px
+    }
+    &Text {
+        align-self: center;
+        width: 50%;
+        color: #fff;
+        width: 100%;
+        font-size: 20px;
+        
+    }
+    
+}

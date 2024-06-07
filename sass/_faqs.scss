@@ -1,0 +1,83 @@
+.faqs {
+    width: 100%;
+    background-color: #f1f9dc;
+    padding: 80px 0 0;
+    &Wrap {
+        background-color: #0d3a25;
+        position: relative;
+        padding: 100px 50px;
+        color: white;
+        border-radius: 20px;
+        max-width: 90%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        @media screen and (min-width: 1280px) {
+            max-width: 1200px;
+        }
+        .strawberry-1 {
+            position: absolute;
+            top: 0;
+            max-width: 200px;
+            right: 0;
+            rotate: -10deg;
+        }
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            border-bottom: 1px solid #4d4d4d;
+            padding: 5px 0;
+        }
+    }
+    &Title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        font-weight: 800;
+        letter-spacing: 0;
+        line-height: .9;
+        max-width: 50%;
+        font-size: 56px;
+        
+    }
+    .accordion {
+        background-color: #0e3a25;
+        color: #fff;
+        cursor: pointer;
+        padding: 18px 0;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+        transition: 0.4s;
+    }
+    .active, .accordion:hover {
+        background-color: #0e3a25;
+    }
+    
+    .accordion:after {
+        content: '\002B';
+        color: #fff;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .active:after {
+        content: "\2212";
+    }
+    
+    .panel {
+        padding: 0;
+        background-color: #0e3a25;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        font-size: 17px;
+        letter-spacing: -.01em;
+        line-height: 1.4;
+        color: #c4baba;
+    }
+}
