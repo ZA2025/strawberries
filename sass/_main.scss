@@ -28,10 +28,10 @@
     .primaryButton {
         max-width: fit-content;
         margin: 0 auto;
+         
         @media screen and (min-width: 1024px) {
             margin: unset;
             text-align: left;
-
         }
     }
      
@@ -172,7 +172,7 @@
         width: 50%;
         color: $darkText;
         width: 100%;
-         
+        margin-bottom: 40px;
         font-size: 20px;
     }
     &Image {
