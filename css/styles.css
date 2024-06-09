@@ -1295,15 +1295,6 @@ ul li {
   max-width: 90px;
   margin: 0 auto;
 }
-.tipsImg.strawberry {
-  rotate: 45deg;
-}
-.tipsImg.beans {
-  padding-top: 20px;
-}
-.tipsImg.mulberry {
-  padding-top: 20px;
-}
 .tipsTitle {
   color: #fd023f;
   font-size: 20px;
@@ -1859,6 +1850,11 @@ iframe {
   margin: 0;
   font-size: 40px;
 }
+@media (max-width: 480px) {
+  .card-back h2 {
+    font-size: 23px;
+  }
+}
 .card-back .text {
   margin: 0 auto;
 }
@@ -1870,11 +1866,6 @@ iframe {
 @media (max-width: 768px) {
   .card {
     width: calc(50% - 20px);
-  }
-}
-@media (max-width: 480px) {
-  .card {
-    width: calc(100% - 20px);
   }
 }
 
