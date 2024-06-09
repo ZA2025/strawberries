@@ -1,7 +1,10 @@
 .faqs {
     width: 100%;
     background-color: #f1f9dc;
-    padding: 80px 0 0;
+    padding: 0;
+    @media screen and (min-width: 768px) {
+        padding: 80px 0 0;
+    }
     &Wrap {
         background-color: #0d3a25;
         position: relative;

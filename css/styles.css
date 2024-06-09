@@ -1336,7 +1336,12 @@ ul li {
 .faqs {
   width: 100%;
   background-color: #f1f9dc;
-  padding: 80px 0 0;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .faqs {
+    padding: 80px 0 0;
+  }
 }
 .faqsWrap {
   background-color: #0d3a25;
@@ -1422,7 +1427,12 @@ ul li {
 .about {
   position: relative;
   background-color: #E5EEFD;
-  padding: 80px 0 0;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 80px 0 0;
+  }
 }
 .aboutWrap {
   background-color: #007aff;
@@ -1489,13 +1499,14 @@ ul li {
   background-color: #f1f3f4;
   display: flex;
   flex-wrap: wrap;
-  padding: 70px 0 0;
+  padding: 0;
   max-width: 90%;
   margin: 0 auto;
   flex-direction: column;
 }
 @media screen and (min-width: 1280px) {
   .contact {
+    padding: 70px 0 0;
     max-width: 1200px;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -1849,9 +1860,8 @@ iframe {
   padding: 0;
   margin: 0;
   font-size: 23px;
-  order: 1;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .card-back h2 {
     font-size: 40px;
     order: unset;
@@ -1859,7 +1869,6 @@ iframe {
 }
 .card-back img {
   max-width: 50px;
-  order: 2;
   margin-top: auto;
 }
 @media (max-width: 768px) {
