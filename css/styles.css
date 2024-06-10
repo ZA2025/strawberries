@@ -1301,8 +1301,13 @@ ul li {
   position: relative;
   margin: 0;
   text-align: center;
-  font-size: 60px;
+  font-size: 30px;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .tipsTitle {
+    font-size: 60px;
+  }
 }
 .tipsList {
   display: flex;
@@ -1457,14 +1462,25 @@ ul li {
   font-weight: 800;
   letter-spacing: 0;
   line-height: 0.9;
-  max-width: 50%;
-  font-size: 56px;
+  max-width: 100%;
+  font-size: 30px;
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .aboutTitle {
+    font-size: 56px;
+    max-width: 50%;
+  }
 }
 .aboutCol {
   position: relative;
-  flex: 0 0 calc((100% - 20px) / 2);
+  flex: unset;
   box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+  .aboutCol {
+    flex: 0 0 calc((100% - 20px) / 2);
+  }
 }
 .aboutCol .man1, .aboutCol img {
   width: 70%;
@@ -1743,8 +1759,13 @@ iframe {
   position: relative;
   margin: 0;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .freshTitle {
+    font-size: 40px;
+  }
 }
 .freshText {
   align-self: center;
@@ -1856,16 +1877,20 @@ iframe {
   padding: 20px;
   box-sizing: border-box;
 }
-.card-back h2 {
+.card-back .title {
   padding: 0;
   margin: 0;
-  font-size: 23px;
+  font-size: 20px;
 }
 @media screen and (min-width: 1024px) {
-  .card-back h2 {
+  .card-back .title {
     font-size: 40px;
     order: unset;
   }
+}
+.card-back .text {
+  padding: 0;
+  margin: 0;
 }
 .card-back img {
   max-width: 50px;
