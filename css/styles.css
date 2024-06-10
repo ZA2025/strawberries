@@ -1668,6 +1668,7 @@ iframe {
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 @media screen and (min-width: 1024px) {
   .freshContent {
@@ -1721,12 +1722,22 @@ iframe {
 .fresh .col .decorContainer .decor2 {
   position: absolute;
   top: 90px;
-  right: -50px;
+  right: 0;
   z-index: 1;
   rotate: 180deg;
 }
+@media screen and (min-width: 768px) {
+  .fresh .col .decorContainer .decor2 {
+    right: -50px;
+  }
+}
 .fresh .col .decorContainer .decor2 img {
-  max-width: 200px;
+  max-width: 170px;
+}
+@media screen and (min-width: 768px) {
+  .fresh .col .decorContainer .decor2 img {
+    max-width: 200px;
+  }
 }
 .fresh .col.image {
   z-index: 4;
