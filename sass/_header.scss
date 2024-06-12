@@ -1,4 +1,17 @@
 @import 'variables';
+.strawberryFarmTimeLine {
+    .pageHeader {
+        background-color: #E5EEFD;
+    }
+    .pageHeaderList {
+        &.show {
+            background-color: #E5EEFD;
+        } 
+    }
+    .footer {
+        background-color: #E5EEFD;
+    }
+}
 .strawberryFarm {
     .pageHeader {
         background-color: #f1f9dc;

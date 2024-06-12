@@ -138,3 +138,29 @@
     background-image:
       radial-gradient(circle at 10px 15px, $darkpink 12px, transparent 13px);
 }
+ 
+ 
+.blueWave::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image:
+     radial-gradient(circle at 10px -5px, transparent 12px, #E5EEFD 13px);
+}
+.blueWave::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 15px;
+    background-size: 40px 20px;
+    background-image:
+      radial-gradient(circle at 10px 15px, #E5EEFD 12px, transparent 13px);
+}

@@ -1,0 +1,179 @@
+$color-white:#fff;
+$brand-color-g:#E5EEFD;
+$brand-color:#0d3a25;
+
+.timeline {
+    padding: 50px 0;
+    position: relative;
+    background: #E5EEFD;
+    &Title {
+        text-align: center;
+        font-size: 30px;
+        color: #263415;
+        @media screen and (min-width: 900px) {
+            font-size: 40px;
+        }
+    }
+    .itemTitle {
+         
+        text-align: left;
+         
+        @media screen and (min-width: 900px) {
+            text-align: center;
+        }
+    }
+    &Container {
+        position: relative;
+        .timelineList {
+            margin: 25px 0 130px;
+            border-left: 2px solid #263415;
+            padding-left: 0;
+            border-top: 0;
+            margin-left: 25px;
+            list-style: none;
+            @media screen and (min-width: 900px) {
+                background-color: rgb(25, 158, 78);
+                margin: 390px 0;
+                padding: 0;
+                border-top: 2px solid #158546;
+                list-style: none;
+            }
+
+            li {
+                height: 220px;
+                float: none;
+                width: inherit;
+                position: relative;
+                @media screen and (min-width: 900px) {
+                    height: unset;
+                    float: left;
+                    width: 20%;
+                    padding-top: 30px;
+                     
+                }
+                
+                &:nth-child(2) {
+                    .img-handler-bot {
+                        img {
+                            width: 70px;
+                        }
+                    }
+                }
+
+                span {
+                    width: 50px;
+                    height: 50px;
+                    margin-left: -25px;
+                    text-align: center;
+                    line-height: 50px -10;
+                    color: $brand-color;
+                    font-size: 2em;
+                    font-style: normal;
+                    position: absolute;
+                    top: -26px;
+                    left: 0;
+                    @media screen and (min-width: 900px) {
+                        left: 50%;
+                    }
+                    &.ps-sp-top {
+                        img {
+                            max-width: 50px;
+                             
+                        }
+
+                    }
+
+                    &.ps-sp-bot {
+                        img {
+                            max-width: 50px;
+                            rotate: 180deg;
+                        }
+                    }
+                }
+                .img-handler-top {
+                    position: absolute;
+                    bottom: 150px ;
+                    width: 30% ;
+                    float: left;
+                    margin-left: 35px;
+                    margin-bottom: 0;
+                    display: none;
+                    @media screen and (min-width: 900px) {
+                        position: absolute;
+                        bottom: 0;
+                        margin-bottom: 130px;
+                        width: 100%;
+                    }
+                    img {
+                        margin: 0 auto;
+                        width: 80%;
+                    }
+                }
+
+                .img-handler-top {
+                    position: absolute;
+                    bottom: 0;
+                    margin-bottom: 130px;
+                    width: 100%;
+
+                    img {
+                        display: table;
+                        margin: 0 auto;
+                        max-width: 200px;
+                        rotate: 50deg;
+                    }
+                }
+
+                .img-handler-bot {
+                    position: absolute;
+                    bottom: 115px;
+                    width: 30% ;
+                    float: left;
+                    margin-left: 35px;
+                    margin-bottom: 0;
+                    @media screen and (min-width: 900px) {
+                        position: absolute;
+                        margin-top: 60px;
+                        width: 100%;
+                    }
+                     
+
+                    img {
+                        display: table;
+                        margin: 0 auto;
+                    }
+                }
+
+                p {
+                    text-align: left;
+                    width: 100%;
+                    margin: 0 auto;
+                    margin-top: 0px;
+                    @media screen and (min-width: 900px) {
+                        text-align: center;
+                        width: 80%;
+                        margin: 0 auto;
+                    }
+                }
+
+                .ps-top {
+                    position: absolute;
+                    bottom: 0;
+                    margin-bottom: 100px;
+                    text-align: left;
+                    left: 20px;
+                    @media screen and (min-width: 900px) {
+                        text-align: center;
+                    }
+                }
+
+                .ps-bot {
+                    position: absolute;
+                    margin-top: 35px;
+                    text-align: left;
+                    left: 20px;
+                }
+            }
+        }
+    }
+}

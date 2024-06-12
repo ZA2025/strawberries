@@ -43,6 +43,16 @@ ul li {
   margin: 0 auto;
 }
 
+.strawberryFarmTimeLine .pageHeader {
+  background-color: #E5EEFD;
+}
+.strawberryFarmTimeLine .pageHeaderList.show {
+  background-color: #E5EEFD;
+}
+.strawberryFarmTimeLine .footer {
+  background-color: #E5EEFD;
+}
+
 .strawberryFarm .pageHeader {
   background-color: #f1f9dc;
 }
@@ -647,6 +657,30 @@ ul li {
   height: 15px;
   background-size: 40px 20px;
   background-image: radial-gradient(circle at 10px 15px, #da3b65 12px, transparent 13px);
+}
+
+.blueWave::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, #E5EEFD 13px);
+}
+
+.blueWave::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 10px 15px, #E5EEFD 12px, transparent 13px);
 }
 
 @keyframes bounce {
@@ -1918,6 +1952,174 @@ iframe {
   .card {
     width: calc(50% - 20px);
   }
+}
+.timeline {
+  padding: 50px 0;
+  position: relative;
+  background: #E5EEFD;
+}
+.timelineTitle {
+  text-align: center;
+  font-size: 30px;
+  color: #263415;
+}
+@media screen and (min-width: 900px) {
+  .timelineTitle {
+    font-size: 40px;
+  }
+}
+.timeline .itemTitle {
+  text-align: left;
+}
+@media screen and (min-width: 900px) {
+  .timeline .itemTitle {
+    text-align: center;
+  }
+}
+.timelineContainer {
+  position: relative;
+}
+.timelineContainer .timelineList {
+  margin: 25px 0 130px;
+  border-left: 2px solid #263415;
+  padding-left: 0;
+  border-top: 0;
+  margin-left: 25px;
+  list-style: none;
+}
+@media screen and (min-width: 900px) {
+  .timelineContainer .timelineList {
+    background-color: #199e4e;
+    margin: 390px 0;
+    padding: 0;
+    border-top: 2px solid #158546;
+    list-style: none;
+  }
+}
+.timelineContainer .timelineList li {
+  height: 220px;
+  float: none;
+  width: inherit;
+  position: relative;
+}
+@media screen and (min-width: 900px) {
+  .timelineContainer .timelineList li {
+    height: unset;
+    float: left;
+    width: 20%;
+    padding-top: 30px;
+  }
+}
+.timelineContainer .timelineList li:nth-child(2) .img-handler-bot img {
+  width: 70px;
+}
+.timelineContainer .timelineList li span {
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  text-align: center;
+  line-height: 50px -10;
+  color: #0d3a25;
+  font-size: 2em;
+  font-style: normal;
+  position: absolute;
+  top: -26px;
+  left: 0;
+}
+@media screen and (min-width: 900px) {
+  .timelineContainer .timelineList li span {
+    left: 50%;
+  }
+}
+.timelineContainer .timelineList li span.ps-sp-top img {
+  max-width: 50px;
+}
+.timelineContainer .timelineList li span.ps-sp-bot img {
+  max-width: 50px;
+  rotate: 180deg;
+}
+.timelineContainer .timelineList li .img-handler-top {
+  position: absolute;
+  bottom: 150px;
+  width: 30%;
+  float: left;
+  margin-left: 35px;
+  margin-bottom: 0;
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .timelineContainer .timelineList li .img-handler-top {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 130px;
+    width: 100%;
+  }
+}
+.timelineContainer .timelineList li .img-handler-top img {
+  margin: 0 auto;
+  width: 80%;
+}
+.timelineContainer .timelineList li .img-handler-top {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 130px;
+  width: 100%;
+}
+.timelineContainer .timelineList li .img-handler-top img {
+  display: table;
+  margin: 0 auto;
+  max-width: 200px;
+  rotate: 50deg;
+}
+.timelineContainer .timelineList li .img-handler-bot {
+  position: absolute;
+  bottom: 115px;
+  width: 30%;
+  float: left;
+  margin-left: 35px;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 900px) {
+  .timelineContainer .timelineList li .img-handler-bot {
+    position: absolute;
+    margin-top: 60px;
+    width: 100%;
+  }
+}
+.timelineContainer .timelineList li .img-handler-bot img {
+  display: table;
+  margin: 0 auto;
+}
+.timelineContainer .timelineList li p {
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+@media screen and (min-width: 900px) {
+  .timelineContainer .timelineList li p {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.timelineContainer .timelineList li .ps-top {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 100px;
+  text-align: left;
+  left: 20px;
+}
+@media screen and (min-width: 900px) {
+  .timelineContainer .timelineList li .ps-top {
+    text-align: center;
+  }
+}
+.timelineContainer .timelineList li .ps-bot {
+  position: absolute;
+  margin-top: 35px;
+  text-align: left;
+  left: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
