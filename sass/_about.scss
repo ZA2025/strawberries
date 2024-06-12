@@ -9,46 +9,68 @@
     }
     &Wrap {
         background-color: $blue;
-        padding: 100px 50px;
+        padding: 50px 50px;
         color: white;
         border-radius: 20px;
-        max-width: 90%;
-        margin: 0 auto;
         box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+         
+    }
+    &Inner {
+        max-width: 90%;
+        margin: 0 auto;
         @media screen and (min-width: 1280px) {
             max-width: 1200px;
         }
-         
     }
-    &Title {
-        font-size: 2rem;
-        margin-bottom: 20px;
+    &MainTitle {
+         
+        margin-bottom: 40px;
         font-weight: 800;
         letter-spacing: 0;
         line-height: .9;
         max-width: 100%;
-        font-size: 30px;
+        font-size: 50px;
         color: #fff;
-        @media screen and (min-width: 768px) {
-            font-size: 56px;
-            max-width: 50%;
-        }
+        flex-basis: 100%;
+        text-align: center;
+    }
+    &Title {
+        font-size: 20px;
+    }
+    &Title2 {
+        font-size: 50px;
+    }
+    &Content {
+        position: absolute;
+        bottom: 0;
+        background-color: #e6ebf1ab;
+        padding: 20px 20px 10px 20px;
+        box-sizing: border-box;
+        max-width: 90%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+         
+        color: #263415;
     }
     &Col {
         position: relative;
         flex: unset;
         box-sizing: border-box;
+         
+        
         @media screen and (min-width: 768px) {
-            flex: 0 0 calc((100% - 20px) / 2);
+            flex: 0 0 calc((100% - 40px) / 3);
         } 
         .man1, img {
-            width: 70%;
+            width: 100%;
             display: block;
             margin: 0 auto;
             position: relative;
+            height: 100%;
         }
         .man2 {
             

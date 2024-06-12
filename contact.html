@@ -60,45 +60,55 @@
         </div>
     </header>
     <section class="contact">
-        <div class="contactCol">
-            <div class="contactForm">
-                <h1 class="contactTitle tracking-in-expand">Contact Us</h1>
-                <p class="contactText tracking-in-expand">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                <form action="" method="post" class="contactForm">
-                    <div class="contactFormWrap">
-                        <div class="contactFormInput">
-                            <label for="name" class="contactFormLabel">Name</label>
-                            <input type="text" name="name" id="name" class="contactFormInputField">
-                        </div>
-                        <div class="contactFormInput">
-                            <label for="email" class="contactFormLabel">Email</label>
-                            <input type="email" name="email" id="email" class="contactFormInputField">
-                        </div>
-                        <div class="contactFormInput">
-                            <label for="message" class="contactFormLabel">Message</label>
-                            <textarea name="message" id="message" class="contactFormInputField"></textarea>
-                        </div>
-                        <div class="contactFormInput">
-                            <button type="submit" class="contactFormButton">Submit</button>
-                        </div>
+        <div class="contactInner">
+            <div class="row">
+                <div class="contactCol">
+                    <div class="contactForm">
+                        <h2 class="contactTitle tracking-in-expand">Contact Us</h2>
+                        <p class="contactText tracking-in-expand">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        <form action="" method="post" class="contactForm">
+                            <div class="contactFormWrap">
+                                <div class="contactFormInput">
+                                    <label for="name" class="contactFormLabel">Name</label>
+                                    <input type="text" name="name" id="name" class="contactFormInputField">
+                                </div>
+                                <div class="contactFormInput">
+                                    <label for="email" class="contactFormLabel">Email</label>
+                                    <input type="email" name="email" id="email" class="contactFormInputField">
+                                </div>
+                                <div class="contactFormInput">
+                                    <label for="message" class="contactFormLabel">Message</label>
+                                    <textarea name="message" id="message" class="contactFormInputField"></textarea>
+                                </div>
+                                <div class="contactFormInput">
+                                    <button type="submit" class="contactFormButton">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                         
+                        <ul class="socialList">
+                            <li class="socialListItem">
+                                <a href="" class="socialListItemLink">
+                                    <img src="./images/icons8-instagram.svg" alt="Instagram" />
+                                </a>
+                            </li>
+                            <li class="socialListItem">
+                                <a href="" class="socialListItemLink" title="Facebook Logo">
+                                    <img src="./images/icons8-facebook.svg" alt="Facebook" />
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </form>
-                 
-                <ul class="socialList">
-                    <li class="socialListItem">
-                        <a href="" class="socialListItemLink">
-                            <img src="./images/icons8-instagram.svg" alt="Instagram" />
-                        </a>
-                    </li>
-                    <li class="socialListItem">
-                        <a href="" class="socialListItemLink" title="Facebook Logo">
-                            <img src="./images/icons8-facebook.svg" alt="Facebook" />
-                        </a>
-                    </li>
-                </ul>
+                </div>
+                <div class="contactCol">
+                   <h2 class="contactTitle">Opening hours</h2>
+                   <p>Opening for this season on Thursday 13th June.</p>
+                   <p>9am till 5pm</p>
+                </div>
             </div>
         </div>
-        <div class="contactCol">
+         
+        <div class="row">
             <div id="map-container">    
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9858.93017865483!2d-0.4378718!3d51.8475801!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487646291f47b0a9%3A0x4e272def22eca4c7!2sGrove%20Farm!5e0!3m2!1sen!2suk!4v1717703041219!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -107,13 +117,7 @@
     </section>
     <section class="footer">
         <div class="footerWrap">  
-            <div class="footerCol info">
-                <h3 class="footerTitle">Get the latest and tastiest</h3>
-                <form class="subscribe-form" action="/subscribe" method="POST">
-                    <input type="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
+           
             <div class="footerCol links">
                 <div class="subCol">
                     <h3>JOIN US</h3>

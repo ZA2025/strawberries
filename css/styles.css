@@ -1475,36 +1475,51 @@ ul li {
 }
 .aboutWrap {
   background-color: #007aff;
-  padding: 100px 50px;
+  padding: 50px 50px;
   color: white;
   border-radius: 20px;
-  max-width: 90%;
-  margin: 0 auto;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
+.aboutInner {
+  max-width: 90%;
+  margin: 0 auto;
+}
 @media screen and (min-width: 1280px) {
-  .aboutWrap {
+  .aboutInner {
     max-width: 1200px;
   }
 }
-.aboutTitle {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.aboutMainTitle {
+  margin-bottom: 40px;
   font-weight: 800;
   letter-spacing: 0;
   line-height: 0.9;
   max-width: 100%;
-  font-size: 30px;
+  font-size: 50px;
   color: #fff;
+  flex-basis: 100%;
+  text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .aboutTitle {
-    font-size: 56px;
-    max-width: 50%;
-  }
+.aboutTitle {
+  font-size: 20px;
+}
+.aboutTitle2 {
+  font-size: 50px;
+}
+.aboutContent {
+  position: absolute;
+  bottom: 0;
+  background-color: #e6ebf1ab;
+  padding: 20px 20px 10px 20px;
+  box-sizing: border-box;
+  max-width: 90%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  color: #263415;
 }
 .aboutCol {
   position: relative;
@@ -1513,14 +1528,15 @@ ul li {
 }
 @media screen and (min-width: 768px) {
   .aboutCol {
-    flex: 0 0 calc((100% - 20px) / 2);
+    flex: 0 0 calc((100% - 40px) / 3);
   }
 }
 .aboutCol .man1, .aboutCol img {
-  width: 70%;
+  width: 100%;
   display: block;
   margin: 0 auto;
   position: relative;
+  height: 100%;
 }
 .aboutCol .man2 {
   position: relative;
@@ -1547,20 +1563,28 @@ ul li {
   position: relative;
   width: 100%;
   background-color: #f1f3f4;
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
-  max-width: 90%;
-  margin: 0 auto;
   flex-direction: column;
 }
 @media screen and (min-width: 1280px) {
   .contact {
     padding: 70px 0 0;
-    max-width: 1200px;
     flex-wrap: nowrap;
     flex-direction: row;
   }
+}
+.contactInner {
+  max-width: 90%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1280px) {
+  .contactInner {
+    max-width: 1200px;
+  }
+}
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
 }
 .contactTitle {
   color: #263415;
@@ -1571,26 +1595,13 @@ ul li {
   flex-basis: 100%;
   max-height: 90%;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1280px) {
   .contactCol {
     width: 50%;
     flex-basis: 50%;
     max-width: 1200px;
-  }
-}
-.contactCol:first-child {
-  flex: 1;
-  padding: 30px 0px;
-}
-.contactCol:last-child {
-  position: relative;
-}
-@media screen and (min-width: 1280px) {
-  .contactCol:last-child {
-    flex: 1;
-    margin-right: calc(-50vw + 50%);
-    width: calc(100vw - 600px);
   }
 }
 .contact .gm-style .place-card-large {
@@ -1616,7 +1627,7 @@ ul li {
 #map-container {
   position: relative;
   width: 100%;
-  height: calc(90vh - 97px);
+  height: 400px;
   overflow: hidden;
   border: none;
   box-shadow: none;
@@ -1972,6 +1983,8 @@ iframe {
   margin: 0;
   padding: 0;
   text-align: left;
+  color: #da3b65;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 900px) {
   .timeline .itemTitle {
