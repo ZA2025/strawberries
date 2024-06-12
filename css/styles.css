@@ -1969,6 +1969,8 @@ iframe {
   }
 }
 .timeline .itemTitle {
+  margin: 0;
+  padding: 0;
   text-align: left;
 }
 @media screen and (min-width: 900px) {
@@ -2008,6 +2010,7 @@ iframe {
     float: left;
     width: 20%;
     padding-top: 30px;
+    border: 0;
   }
 }
 .timelineContainer .timelineList li:nth-child(2) .img-handler-bot img {
@@ -2105,21 +2108,31 @@ iframe {
 }
 .timelineContainer .timelineList li .ps-top {
   position: absolute;
-  bottom: 0;
-  margin-bottom: 100px;
+  top: 0;
   text-align: left;
-  left: 20px;
+  padding: 0 20px;
 }
 @media screen and (min-width: 900px) {
   .timelineContainer .timelineList li .ps-top {
     text-align: center;
+    margin-bottom: 100px;
+    bottom: 0;
+    top: unset;
+    left: 20px;
+    padding-top: unset;
   }
 }
 .timelineContainer .timelineList li .ps-bot {
   position: absolute;
-  margin-top: 35px;
   text-align: left;
-  left: 20px;
+  padding: 0 20px;
+}
+@media screen and (min-width: 900px) {
+  .timelineContainer .timelineList li .ps-bot {
+    margin-top: 35px;
+    left: 20px;
+    padding-top: unset;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
