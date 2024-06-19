@@ -9,7 +9,7 @@ document.querySelectorAll('.card').forEach(card => {
                 flippedCard.removeChild(closeButton);
             }
         });
-
+         
         // Add 'flipped' class to the clicked card
         card.classList.add('flipped');
 
